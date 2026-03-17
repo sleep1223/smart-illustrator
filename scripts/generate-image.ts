@@ -32,7 +32,7 @@ interface ReferenceImage {
 
 // API endpoints
 const OPENROUTER_API_BASE = 'https://openrouter.ai/api/v1';
-const GEMINI_API_BASE = 'https://generativelanguage.googleapis.com/v1beta/models';
+const GEMINI_API_BASE = process.env.GEMINI_API_BASE || 'https://generativelanguage.googleapis.com/v1beta/models';
 
 // Default models
 const DEFAULT_OPENROUTER_MODEL = 'google/gemini-3-pro-image-preview';
