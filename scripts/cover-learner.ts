@@ -17,7 +17,7 @@ const USER_CONFIG_DIR = join(homedir(), '.smart-illustrator');
 const LEARNINGS_FILE = join(USER_CONFIG_DIR, 'cover-learnings.md');
 
 // Gemini API for image analysis
-const GEMINI_API_BASE = 'https://generativelanguage.googleapis.com/v1beta/models';
+const GEMINI_API_BASE = process.env.GEMINI_API_BASE || 'https://generativelanguage.googleapis.com/v1beta/models';
 const ANALYSIS_MODEL = 'gemini-2.0-flash';
 
 interface CoverAnalysis {
